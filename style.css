@@ -15,6 +15,7 @@ body{
 }
 :root{
     --blue-color: rgb(8, 147, 247);
+    --grey-color:  rgba(203, 200, 200, 0.523);
 }
 .header{
     border: solid red;
@@ -73,4 +74,69 @@ li{
     width: 25px;
     fill: white;
     padding-right: 10px;
+}
+
+.header svg{
+    width: 30px;
+}
+
+.header{
+    height: 20%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 90px repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+.bar input{
+    width: 600px;
+    background-color: var(--grey-color);
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.header img{
+    width: 60px;
+    justify-self: center;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#search-icon{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    justify-self: flex-end;
+}
+#bell{
+    grid-row: 1/2;
+    grid-column: 3/4;
+    justify-self: flex-end;
+}
+
+button{
+    background-color: var(--blue-color);
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 20px;
+    margin: 20px;
+    border: none;
+}
+p{
+    font-weight: bold;
+}
+span{
+    font-size: 25px;
+}
+
+.img2{
+    justify-self: flex-end;
+    margin-right: 10px;
 }
